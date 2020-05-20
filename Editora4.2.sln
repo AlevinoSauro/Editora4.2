@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Editora4.2", "Editora4.2\Editora4.2.csproj", "{9BF99791-AB48-4F31-BF2B-48A2A56D0320}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BF99791-AB48-4F31-BF2B-48A2A56D0320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF99791-AB48-4F31-BF2B-48A2A56D0320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF99791-AB48-4F31-BF2B-48A2A56D0320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF99791-AB48-4F31-BF2B-48A2A56D0320}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {378F81D7-485B-4361-8B1F-1FF237CE5B19}
+	EndGlobalSection
+EndGlobal
