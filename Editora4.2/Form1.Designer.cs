@@ -59,7 +59,6 @@
             this.telefone = new System.Windows.Forms.TextBox();
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtSearch2 = new System.Windows.Forms.TextBox();
@@ -421,7 +420,6 @@
             this.panel2.Controls.Add(this.telefone);
             this.panel2.Controls.Add(this.txtNomeCompleto);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Enabled = false;
@@ -457,24 +455,16 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 39);
+            this.label8.Location = new System.Drawing.Point(3, 36);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 13);
             this.label8.TabIndex = 1;
             this.label8.Text = "Phone:";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(23, 42);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 13);
-            this.label9.TabIndex = 1;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 12);
+            this.label10.Location = new System.Drawing.Point(3, 9);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(38, 13);
             this.label10.TabIndex = 1;
@@ -483,7 +473,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(12, 66);
+            this.label11.Location = new System.Drawing.Point(3, 61);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(35, 13);
             this.label11.TabIndex = 1;
@@ -500,7 +490,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(30, 178);
+            this.label12.Location = new System.Drawing.Point(36, 178);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 13);
             this.label12.TabIndex = 16;
@@ -824,7 +814,6 @@
         private System.Windows.Forms.TextBox telefone;
         private System.Windows.Forms.TextBox txtNomeCompleto;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtSearch2;
