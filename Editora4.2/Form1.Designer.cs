@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuVertical = new System.Windows.Forms.Panel();
             this.subMenuAce = new System.Windows.Forms.Panel();
@@ -35,6 +36,9 @@
             this.btnAudio = new System.Windows.Forms.Button();
             this.btnHq = new System.Windows.Forms.Button();
             this.btnEbook = new System.Windows.Forms.Button();
+            this.SubMenuCad = new System.Windows.Forms.Panel();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnItens = new System.Windows.Forms.Button();
             this.btnAcervo = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
@@ -47,14 +51,14 @@
             this.pnCliente = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnNew2 = new System.Windows.Forms.Button();
+            this.btnEdit2 = new System.Windows.Forms.Button();
+            this.btnCancel2 = new System.Windows.Forms.Button();
+            this.btnSave2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
+            this.telefone = new System.Windows.Forms.TextBox();
+            this.nomeCompleto = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -79,11 +83,14 @@
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnItens = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
-            this.SubMenuCad = new System.Windows.Forms.Panel();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.editora_DataSet = new Editora4._2.Editora_DataSet();
+            this.acervoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientesTableAdapter = new Editora4._2.Editora_DataSetTableAdapters.ClientesTableAdapter();
+            this.acervoTableAdapter = new Editora4._2.Editora_DataSetTableAdapters.AcervoTableAdapter();
             this.menuVertical.SuspendLayout();
             this.subMenuAce.SuspendLayout();
+            this.SubMenuCad.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnItens.SuspendLayout();
@@ -93,7 +100,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
-            this.SubMenuCad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuVertical
@@ -200,6 +209,56 @@
             this.btnEbook.Text = "&E - Books";
             this.btnEbook.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEbook.UseVisualStyleBackColor = false;
+            // 
+            // SubMenuCad
+            // 
+            this.SubMenuCad.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.SubMenuCad.Controls.Add(this.btnClientes);
+            this.SubMenuCad.Controls.Add(this.btnItens);
+            this.SubMenuCad.Location = new System.Drawing.Point(0, 124);
+            this.SubMenuCad.Name = "SubMenuCad";
+            this.SubMenuCad.Size = new System.Drawing.Size(185, 71);
+            this.SubMenuCad.TabIndex = 13;
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.BackColor = System.Drawing.Color.Transparent;
+            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(78)))));
+            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.btnClientes.Location = new System.Drawing.Point(0, 2);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnClientes.Size = new System.Drawing.Size(186, 29);
+            this.btnClientes.TabIndex = 6;
+            this.btnClientes.Text = "&Clientes";
+            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // btnItens
+            // 
+            this.btnItens.BackColor = System.Drawing.Color.Transparent;
+            this.btnItens.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnItens.FlatAppearance.BorderSize = 0;
+            this.btnItens.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(78)))));
+            this.btnItens.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
+            this.btnItens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnItens.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItens.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.btnItens.Location = new System.Drawing.Point(0, 38);
+            this.btnItens.Name = "btnItens";
+            this.btnItens.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnItens.Size = new System.Drawing.Size(186, 29);
+            this.btnItens.TabIndex = 6;
+            this.btnItens.Text = "&Itens";
+            this.btnItens.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnItens.UseVisualStyleBackColor = false;
+            this.btnItens.Click += new System.EventHandler(this.btnItens_Click);
             // 
             // btnAcervo
             // 
@@ -331,9 +390,9 @@
             this.pnItens.Controls.Add(this.btnEdit);
             this.pnItens.Controls.Add(this.btnCancel);
             this.pnItens.Controls.Add(this.btnSave);
-            this.pnItens.Controls.Add(this.panel);
             this.pnItens.Controls.Add(this.txtSearch);
             this.pnItens.Controls.Add(this.label7);
+            this.pnItens.Controls.Add(this.panel);
             this.pnItens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnItens.Location = new System.Drawing.Point(186, 0);
             this.pnItens.Name = "pnItens";
@@ -344,10 +403,10 @@
             // 
             this.pnCliente.Controls.Add(this.label13);
             this.pnCliente.Controls.Add(this.dataGridView1);
-            this.pnCliente.Controls.Add(this.button1);
-            this.pnCliente.Controls.Add(this.button2);
-            this.pnCliente.Controls.Add(this.button3);
-            this.pnCliente.Controls.Add(this.button4);
+            this.pnCliente.Controls.Add(this.btnNew2);
+            this.pnCliente.Controls.Add(this.btnEdit2);
+            this.pnCliente.Controls.Add(this.btnCancel2);
+            this.pnCliente.Controls.Add(this.btnSave2);
             this.pnCliente.Controls.Add(this.panel1);
             this.pnCliente.Controls.Add(this.textBox4);
             this.pnCliente.Controls.Add(this.label12);
@@ -376,47 +435,47 @@
             this.dataGridView1.Size = new System.Drawing.Size(648, 246);
             this.dataGridView1.TabIndex = 17;
             // 
-            // button1
+            // btnNew2
             // 
-            this.button1.Location = new System.Drawing.Point(342, 472);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "New";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNew2.Location = new System.Drawing.Point(342, 472);
+            this.btnNew2.Name = "btnNew2";
+            this.btnNew2.Size = new System.Drawing.Size(75, 23);
+            this.btnNew2.TabIndex = 12;
+            this.btnNew2.Text = "New";
+            this.btnNew2.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEdit2
             // 
-            this.button2.Location = new System.Drawing.Point(423, 472);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEdit2.Location = new System.Drawing.Point(423, 472);
+            this.btnEdit2.Name = "btnEdit2";
+            this.btnEdit2.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit2.TabIndex = 13;
+            this.btnEdit2.Text = "Edit";
+            this.btnEdit2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnCancel2
             // 
-            this.button3.Location = new System.Drawing.Point(504, 472);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCancel2.Location = new System.Drawing.Point(504, 472);
+            this.btnCancel2.Name = "btnCancel2";
+            this.btnCancel2.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel2.TabIndex = 14;
+            this.btnCancel2.Text = "Cancel";
+            this.btnCancel2.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnSave2
             // 
-            this.button4.Location = new System.Drawing.Point(585, 472);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Save";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSave2.Location = new System.Drawing.Point(585, 472);
+            this.btnSave2.Name = "btnSave2";
+            this.btnSave2.Size = new System.Drawing.Size(75, 23);
+            this.btnSave2.TabIndex = 15;
+            this.btnSave2.Text = "Save";
+            this.btnSave2.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.email);
+            this.panel1.Controls.Add(this.telefone);
+            this.panel1.Controls.Add(this.nomeCompleto);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label10);
@@ -427,26 +486,29 @@
             this.panel1.Size = new System.Drawing.Size(648, 94);
             this.panel1.TabIndex = 11;
             // 
-            // textBox2
+            // email
             // 
-            this.textBox2.Location = new System.Drawing.Point(59, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(571, 20);
-            this.textBox2.TabIndex = 2;
+            this.email.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Email", true));
+            this.email.Location = new System.Drawing.Point(59, 61);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(571, 20);
+            this.email.TabIndex = 2;
             // 
-            // textBox1
+            // telefone
             // 
-            this.textBox1.Location = new System.Drawing.Point(59, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(571, 20);
-            this.textBox1.TabIndex = 2;
+            this.telefone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Numero_Telefone", true));
+            this.telefone.Location = new System.Drawing.Point(59, 36);
+            this.telefone.Name = "telefone";
+            this.telefone.Size = new System.Drawing.Size(571, 20);
+            this.telefone.TabIndex = 2;
             // 
-            // textBox3
+            // nomeCompleto
             // 
-            this.textBox3.Location = new System.Drawing.Point(59, 9);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(571, 20);
-            this.textBox3.TabIndex = 2;
+            this.nomeCompleto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Nome_Completo", true));
+            this.nomeCompleto.Location = new System.Drawing.Point(59, 9);
+            this.nomeCompleto.Name = "nomeCompleto";
+            this.nomeCompleto.Size = new System.Drawing.Size(571, 20);
+            this.nomeCompleto.TabIndex = 2;
             // 
             // label8
             // 
@@ -523,7 +585,7 @@
             this.btnNew.Location = new System.Drawing.Point(342, 486);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(75, 23);
-            this.btnNew.TabIndex = 4;
+            this.btnNew.TabIndex = 2;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
             // 
@@ -532,7 +594,7 @@
             this.btnEdit.Location = new System.Drawing.Point(423, 486);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
-            this.btnEdit.TabIndex = 5;
+            this.btnEdit.TabIndex = 3;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
@@ -541,7 +603,7 @@
             this.btnCancel.Location = new System.Drawing.Point(504, 486);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 6;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -550,7 +612,7 @@
             this.btnSave.Location = new System.Drawing.Point(585, 486);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 7;
+            this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
@@ -569,7 +631,7 @@
             this.panel.Location = new System.Drawing.Point(12, 35);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(648, 193);
-            this.panel.TabIndex = 3;
+            this.panel.TabIndex = 0;
             // 
             // btnBrowse
             // 
@@ -582,13 +644,15 @@
             // 
             // txtAutor
             // 
+            this.txtAutor.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.acervoBindingSource, "Autor", true));
             this.txtAutor.Location = new System.Drawing.Point(211, 36);
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(422, 20);
-            this.txtAutor.TabIndex = 2;
+            this.txtAutor.TabIndex = 1;
             // 
             // txtSinopse
             // 
+            this.txtSinopse.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.acervoBindingSource, "Sinopse", true));
             this.txtSinopse.Location = new System.Drawing.Point(211, 63);
             this.txtSinopse.Multiline = true;
             this.txtSinopse.Name = "txtSinopse";
@@ -597,10 +661,11 @@
             // 
             // txtFullName
             // 
+            this.txtFullName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.acervoBindingSource, "Titulo", true));
             this.txtFullName.Location = new System.Drawing.Point(211, 9);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(422, 20);
-            this.txtFullName.TabIndex = 2;
+            this.txtFullName.TabIndex = 0;
             // 
             // label3
             // 
@@ -640,6 +705,7 @@
             // pictureBox
             // 
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.acervoBindingSource, "Capa", true));
             this.pictureBox.Location = new System.Drawing.Point(0, 0);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(139, 160);
@@ -652,7 +718,7 @@
             this.txtSearch.Location = new System.Drawing.Point(65, 234);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(580, 20);
-            this.txtSearch.TabIndex = 10;
+            this.txtSearch.TabIndex = 1;
             // 
             // label7
             // 
@@ -663,55 +729,28 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Busca:";
             // 
-            // btnItens
+            // clientesBindingSource
             // 
-            this.btnItens.BackColor = System.Drawing.Color.Transparent;
-            this.btnItens.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnItens.FlatAppearance.BorderSize = 0;
-            this.btnItens.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(78)))));
-            this.btnItens.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
-            this.btnItens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnItens.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItens.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.btnItens.Location = new System.Drawing.Point(0, 38);
-            this.btnItens.Name = "btnItens";
-            this.btnItens.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnItens.Size = new System.Drawing.Size(186, 29);
-            this.btnItens.TabIndex = 6;
-            this.btnItens.Text = "&Itens";
-            this.btnItens.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnItens.UseVisualStyleBackColor = false;
-            this.btnItens.Click += new System.EventHandler(this.btnItens_Click);
+            this.clientesBindingSource.DataMember = "Clientes";
+            this.clientesBindingSource.DataSource = this.editora_DataSet;
             // 
-            // btnClientes
+            // editora_DataSet
             // 
-            this.btnClientes.BackColor = System.Drawing.Color.Transparent;
-            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(78)))));
-            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.btnClientes.Location = new System.Drawing.Point(0, 2);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnClientes.Size = new System.Drawing.Size(186, 29);
-            this.btnClientes.TabIndex = 6;
-            this.btnClientes.Text = "&Clientes";
-            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.UseVisualStyleBackColor = false;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            this.editora_DataSet.DataSetName = "Editora_DataSet";
+            this.editora_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // SubMenuCad
+            // acervoBindingSource
             // 
-            this.SubMenuCad.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.SubMenuCad.Controls.Add(this.btnClientes);
-            this.SubMenuCad.Controls.Add(this.btnItens);
-            this.SubMenuCad.Location = new System.Drawing.Point(0, 124);
-            this.SubMenuCad.Name = "SubMenuCad";
-            this.SubMenuCad.Size = new System.Drawing.Size(185, 71);
-            this.SubMenuCad.TabIndex = 13;
+            this.acervoBindingSource.DataMember = "Acervo";
+            this.acervoBindingSource.DataSource = this.editora_DataSet;
+            // 
+            // clientesTableAdapter
+            // 
+            this.clientesTableAdapter.ClearBeforeFill = true;
+            // 
+            // acervoTableAdapter
+            // 
+            this.acervoTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -725,8 +764,10 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editora4.2";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuVertical.ResumeLayout(false);
             this.subMenuAce.ResumeLayout(false);
+            this.SubMenuCad.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -741,7 +782,9 @@
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
-            this.SubMenuCad.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -783,14 +826,14 @@
         private System.Windows.Forms.Panel pnCliente;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnNew2;
+        private System.Windows.Forms.Button btnEdit2;
+        private System.Windows.Forms.Button btnCancel2;
+        private System.Windows.Forms.Button btnSave2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox email;
+        private System.Windows.Forms.TextBox telefone;
+        private System.Windows.Forms.TextBox nomeCompleto;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -801,6 +844,11 @@
         private System.Windows.Forms.Panel SubMenuCad;
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnItens;
+        private Editora_DataSet editora_DataSet;
+        private System.Windows.Forms.BindingSource clientesBindingSource;
+        private Editora_DataSetTableAdapters.ClientesTableAdapter clientesTableAdapter;
+        private System.Windows.Forms.BindingSource acervoBindingSource;
+        private Editora_DataSetTableAdapters.AcervoTableAdapter acervoTableAdapter;
     }
 }
 

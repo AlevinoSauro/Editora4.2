@@ -138,10 +138,10 @@
   <xs:element name="Editora_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Editora_DataSet" msprop:Generator_UserDSName="Editora_DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Acervo" msprop:Generator_TableClassName="AcervoDataTable" msprop:Generator_TableVarName="tableAcervo" msprop:Generator_TablePropName="Acervo" msprop:Generator_RowDeletingName="AcervoRowDeleting" msprop:Generator_RowChangingName="AcervoRowChanging" msprop:Generator_RowEvHandlerName="AcervoRowChangeEventHandler" msprop:Generator_RowDeletedName="AcervoRowDeleted" msprop:Generator_UserTableName="Acervo" msprop:Generator_RowChangedName="AcervoRowChanged" msprop:Generator_RowEvArgName="AcervoRowChangeEvent" msprop:Generator_RowClassName="AcervoRow">
+        <xs:element name="Acervo" msprop:Generator_TableClassName="AcervoDataTable" msprop:Generator_TableVarName="tableAcervo" msprop:Generator_RowChangedName="AcervoRowChanged" msprop:Generator_TablePropName="Acervo" msprop:Generator_RowDeletingName="AcervoRowDeleting" msprop:Generator_RowChangingName="AcervoRowChanging" msprop:Generator_RowEvHandlerName="AcervoRowChangeEventHandler" msprop:Generator_RowDeletedName="AcervoRowDeleted" msprop:Generator_RowClassName="AcervoRow" msprop:Generator_UserTableName="Acervo" msprop:Generator_RowEvArgName="AcervoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_Acervo" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Acervo" msprop:Generator_ColumnPropNameInRow="ID_Acervo" msprop:Generator_ColumnPropNameInTable="ID_AcervoColumn" msprop:Generator_UserColumnName="ID_Acervo" type="xs:int" />
+              <xs:element name="ID_Acervo" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID_Acervo" msprop:Generator_ColumnPropNameInRow="ID_Acervo" msprop:Generator_ColumnPropNameInTable="ID_AcervoColumn" msprop:Generator_UserColumnName="ID_Acervo" type="xs:int" />
               <xs:element name="Titulo" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" msprop:Generator_UserColumnName="Titulo" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -167,10 +167,10 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Clientes" msprop:Generator_TableClassName="ClientesDataTable" msprop:Generator_TableVarName="tableClientes" msprop:Generator_TablePropName="Clientes" msprop:Generator_RowDeletingName="ClientesRowDeleting" msprop:Generator_RowChangingName="ClientesRowChanging" msprop:Generator_RowEvHandlerName="ClientesRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientesRowDeleted" msprop:Generator_UserTableName="Clientes" msprop:Generator_RowChangedName="ClientesRowChanged" msprop:Generator_RowEvArgName="ClientesRowChangeEvent" msprop:Generator_RowClassName="ClientesRow">
+        <xs:element name="Clientes" msprop:Generator_TableClassName="ClientesDataTable" msprop:Generator_TableVarName="tableClientes" msprop:Generator_RowChangedName="ClientesRowChanged" msprop:Generator_TablePropName="Clientes" msprop:Generator_RowDeletingName="ClientesRowDeleting" msprop:Generator_RowChangingName="ClientesRowChanging" msprop:Generator_RowEvHandlerName="ClientesRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientesRowDeleted" msprop:Generator_RowClassName="ClientesRow" msprop:Generator_UserTableName="Clientes" msprop:Generator_RowEvArgName="ClientesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_Clientes" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Clientes" msprop:Generator_ColumnPropNameInRow="ID_Clientes" msprop:Generator_ColumnPropNameInTable="ID_ClientesColumn" msprop:Generator_UserColumnName="ID_Clientes" type="xs:int" />
+              <xs:element name="ID_Clientes" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID_Clientes" msprop:Generator_ColumnPropNameInRow="ID_Clientes" msprop:Generator_ColumnPropNameInTable="ID_ClientesColumn" msprop:Generator_UserColumnName="ID_Clientes" type="xs:int" />
               <xs:element name="Nome_Completo" msprop:Generator_ColumnVarNameInTable="columnNome_Completo" msprop:Generator_ColumnPropNameInRow="Nome_Completo" msprop:Generator_ColumnPropNameInTable="Nome_CompletoColumn" msprop:Generator_UserColumnName="Nome_Completo" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">

@@ -494,8 +494,7 @@ namespace Editora4._2 {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID_Acervo}, true));
                 this.columnID_Acervo.AutoIncrement = true;
-                this.columnID_Acervo.AutoIncrementSeed = -1;
-                this.columnID_Acervo.AutoIncrementStep = -1;
+                this.columnID_Acervo.AutoIncrementSeed = 1;
                 this.columnID_Acervo.AllowDBNull = false;
                 this.columnID_Acervo.Unique = true;
                 this.columnTitulo.MaxLength = 255;
@@ -800,8 +799,7 @@ namespace Editora4._2 {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID_Clientes}, true));
                 this.columnID_Clientes.AutoIncrement = true;
-                this.columnID_Clientes.AutoIncrementSeed = -1;
-                this.columnID_Clientes.AutoIncrementStep = -1;
+                this.columnID_Clientes.AutoIncrementSeed = 1;
                 this.columnID_Clientes.AllowDBNull = false;
                 this.columnID_Clientes.Unique = true;
                 this.columnNome_Completo.MaxLength = 255;
