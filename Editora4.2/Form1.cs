@@ -56,10 +56,6 @@ namespace Editora4._2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'editora_DataSet.Acervo'. Você pode movê-la ou removê-la conforme necessário.
-            this.acervoTableAdapter.Fill(this.editora_DataSet.Acervo);
-            // TODO: esta linha de código carrega dados na tabela 'editora_DataSet.Clientes'. Você pode movê-la ou removê-la conforme necessário.
-            this.clientesTableAdapter.Fill(this.editora_DataSet.Clientes);
 
             clientesBindingSource.DataSource = this.editora_DataSet;
 
@@ -229,7 +225,7 @@ namespace Editora4._2
             if (e.KeyCode == Keys.Delete)
             {
                 if (MessageBox.Show("Are you sure want to delete this record ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                    clientesBindingSource.RemoveCurrent();
+                    acervoBindingSource.RemoveCurrent();
             }
         }
     }

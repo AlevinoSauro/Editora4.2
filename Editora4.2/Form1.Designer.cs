@@ -44,12 +44,6 @@
             this.pnItens = new System.Windows.Forms.Panel();
             this.pnCliente = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDClientesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeCompletoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroTelefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.editora_DataSet = new Editora4._2.Editora_DataSet();
             this.btnNew2 = new System.Windows.Forms.Button();
             this.btnEdit2 = new System.Windows.Forms.Button();
             this.btnCancel2 = new System.Windows.Forms.Button();
@@ -65,12 +59,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.iDAcervoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tituloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.autorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sinopseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capaDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.acervoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnNew = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -88,8 +76,20 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.editora_DataSet = new Editora4._2.Editora_DataSet();
+            this.iDAcervoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tituloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sinopseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capaDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.acervoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientesTableAdapter = new Editora4._2.Editora_DataSetTableAdapters.ClientesTableAdapter();
             this.acervoTableAdapter = new Editora4._2.Editora_DataSetTableAdapters.AcervoTableAdapter();
+            this.iDClientesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeCompletoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroTelefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuVertical.SuspendLayout();
             this.SubMenuCad.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -97,13 +97,13 @@
             this.pnItens.SuspendLayout();
             this.pnCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).BeginInit();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuVertical
@@ -303,6 +303,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDClientesDataGridViewTextBoxColumn,
@@ -315,44 +316,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(607, 238);
             this.dataGridView1.TabIndex = 17;
             this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
-            // 
-            // iDClientesDataGridViewTextBoxColumn
-            // 
-            this.iDClientesDataGridViewTextBoxColumn.DataPropertyName = "ID_Clientes";
-            this.iDClientesDataGridViewTextBoxColumn.HeaderText = "ID_Clientes";
-            this.iDClientesDataGridViewTextBoxColumn.Name = "iDClientesDataGridViewTextBoxColumn";
-            this.iDClientesDataGridViewTextBoxColumn.Width = 70;
-            // 
-            // nomeCompletoDataGridViewTextBoxColumn
-            // 
-            this.nomeCompletoDataGridViewTextBoxColumn.DataPropertyName = "Nome_Completo";
-            this.nomeCompletoDataGridViewTextBoxColumn.HeaderText = "Nome_Completo";
-            this.nomeCompletoDataGridViewTextBoxColumn.Name = "nomeCompletoDataGridViewTextBoxColumn";
-            this.nomeCompletoDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // numeroTelefoneDataGridViewTextBoxColumn
-            // 
-            this.numeroTelefoneDataGridViewTextBoxColumn.DataPropertyName = "Numero_Telefone";
-            this.numeroTelefoneDataGridViewTextBoxColumn.HeaderText = "Numero_Telefone";
-            this.numeroTelefoneDataGridViewTextBoxColumn.Name = "numeroTelefoneDataGridViewTextBoxColumn";
-            this.numeroTelefoneDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 180;
-            // 
-            // clientesBindingSource
-            // 
-            this.clientesBindingSource.DataMember = "Clientes";
-            this.clientesBindingSource.DataSource = this.editora_DataSet;
-            // 
-            // editora_DataSet
-            // 
-            this.editora_DataSet.DataSetName = "Editora_DataSet";
-            this.editora_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnNew2
             // 
@@ -510,6 +473,7 @@
             // dataGridView
             // 
             this.dataGridView.AutoGenerateColumns = false;
+            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDAcervoDataGridViewTextBoxColumn,
@@ -523,46 +487,6 @@
             this.dataGridView.Size = new System.Drawing.Size(648, 220);
             this.dataGridView.TabIndex = 9;
             this.dataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView_KeyDown);
-            // 
-            // iDAcervoDataGridViewTextBoxColumn
-            // 
-            this.iDAcervoDataGridViewTextBoxColumn.DataPropertyName = "ID_Acervo";
-            this.iDAcervoDataGridViewTextBoxColumn.HeaderText = "ID_Acervo";
-            this.iDAcervoDataGridViewTextBoxColumn.Name = "iDAcervoDataGridViewTextBoxColumn";
-            this.iDAcervoDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // tituloDataGridViewTextBoxColumn
-            // 
-            this.tituloDataGridViewTextBoxColumn.DataPropertyName = "Titulo";
-            this.tituloDataGridViewTextBoxColumn.HeaderText = "Titulo";
-            this.tituloDataGridViewTextBoxColumn.Name = "tituloDataGridViewTextBoxColumn";
-            this.tituloDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // autorDataGridViewTextBoxColumn
-            // 
-            this.autorDataGridViewTextBoxColumn.DataPropertyName = "Autor";
-            this.autorDataGridViewTextBoxColumn.HeaderText = "Autor";
-            this.autorDataGridViewTextBoxColumn.Name = "autorDataGridViewTextBoxColumn";
-            this.autorDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // sinopseDataGridViewTextBoxColumn
-            // 
-            this.sinopseDataGridViewTextBoxColumn.DataPropertyName = "Sinopse";
-            this.sinopseDataGridViewTextBoxColumn.HeaderText = "Sinopse";
-            this.sinopseDataGridViewTextBoxColumn.Name = "sinopseDataGridViewTextBoxColumn";
-            this.sinopseDataGridViewTextBoxColumn.Width = 300;
-            // 
-            // capaDataGridViewImageColumn
-            // 
-            this.capaDataGridViewImageColumn.DataPropertyName = "Capa";
-            this.capaDataGridViewImageColumn.HeaderText = "Capa";
-            this.capaDataGridViewImageColumn.Name = "capaDataGridViewImageColumn";
-            this.capaDataGridViewImageColumn.Width = 200;
-            // 
-            // acervoBindingSource
-            // 
-            this.acervoBindingSource.DataMember = "Acervo";
-            this.acervoBindingSource.DataSource = this.editora_DataSet;
             // 
             // btnNew
             // 
@@ -730,6 +654,56 @@
             this.label14.TabIndex = 19;
             this.label14.Text = "Itens";
             // 
+            // clientesBindingSource
+            // 
+            this.clientesBindingSource.DataMember = "Clientes";
+            this.clientesBindingSource.DataSource = this.editora_DataSet;
+            // 
+            // editora_DataSet
+            // 
+            this.editora_DataSet.DataSetName = "Editora_DataSet";
+            this.editora_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // iDAcervoDataGridViewTextBoxColumn
+            // 
+            this.iDAcervoDataGridViewTextBoxColumn.DataPropertyName = "ID_Acervo";
+            this.iDAcervoDataGridViewTextBoxColumn.HeaderText = "ID_Acervo";
+            this.iDAcervoDataGridViewTextBoxColumn.Name = "iDAcervoDataGridViewTextBoxColumn";
+            this.iDAcervoDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // tituloDataGridViewTextBoxColumn
+            // 
+            this.tituloDataGridViewTextBoxColumn.DataPropertyName = "Titulo";
+            this.tituloDataGridViewTextBoxColumn.HeaderText = "Titulo";
+            this.tituloDataGridViewTextBoxColumn.Name = "tituloDataGridViewTextBoxColumn";
+            this.tituloDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // autorDataGridViewTextBoxColumn
+            // 
+            this.autorDataGridViewTextBoxColumn.DataPropertyName = "Autor";
+            this.autorDataGridViewTextBoxColumn.HeaderText = "Autor";
+            this.autorDataGridViewTextBoxColumn.Name = "autorDataGridViewTextBoxColumn";
+            this.autorDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // sinopseDataGridViewTextBoxColumn
+            // 
+            this.sinopseDataGridViewTextBoxColumn.DataPropertyName = "Sinopse";
+            this.sinopseDataGridViewTextBoxColumn.HeaderText = "Sinopse";
+            this.sinopseDataGridViewTextBoxColumn.Name = "sinopseDataGridViewTextBoxColumn";
+            this.sinopseDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // capaDataGridViewImageColumn
+            // 
+            this.capaDataGridViewImageColumn.DataPropertyName = "Capa";
+            this.capaDataGridViewImageColumn.HeaderText = "Capa";
+            this.capaDataGridViewImageColumn.Name = "capaDataGridViewImageColumn";
+            this.capaDataGridViewImageColumn.Width = 200;
+            // 
+            // acervoBindingSource
+            // 
+            this.acervoBindingSource.DataMember = "Acervo";
+            this.acervoBindingSource.DataSource = this.editora_DataSet;
+            // 
             // clientesTableAdapter
             // 
             this.clientesTableAdapter.ClearBeforeFill = true;
@@ -737,6 +711,34 @@
             // acervoTableAdapter
             // 
             this.acervoTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDClientesDataGridViewTextBoxColumn
+            // 
+            this.iDClientesDataGridViewTextBoxColumn.DataPropertyName = "ID_Clientes";
+            this.iDClientesDataGridViewTextBoxColumn.HeaderText = "ID_Clientes";
+            this.iDClientesDataGridViewTextBoxColumn.Name = "iDClientesDataGridViewTextBoxColumn";
+            this.iDClientesDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // nomeCompletoDataGridViewTextBoxColumn
+            // 
+            this.nomeCompletoDataGridViewTextBoxColumn.DataPropertyName = "Nome_Completo";
+            this.nomeCompletoDataGridViewTextBoxColumn.HeaderText = "Nome_Completo";
+            this.nomeCompletoDataGridViewTextBoxColumn.Name = "nomeCompletoDataGridViewTextBoxColumn";
+            this.nomeCompletoDataGridViewTextBoxColumn.Width = 170;
+            // 
+            // numeroTelefoneDataGridViewTextBoxColumn
+            // 
+            this.numeroTelefoneDataGridViewTextBoxColumn.DataPropertyName = "Numero_Telefone";
+            this.numeroTelefoneDataGridViewTextBoxColumn.HeaderText = "Numero_Telefone";
+            this.numeroTelefoneDataGridViewTextBoxColumn.Name = "numeroTelefoneDataGridViewTextBoxColumn";
+            this.numeroTelefoneDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 200;
             // 
             // Form1
             // 
@@ -762,15 +764,15 @@
             this.pnCliente.ResumeLayout(false);
             this.pnCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).EndInit();
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -828,15 +830,15 @@
         private System.Windows.Forms.BindingSource acervoBindingSource;
         private Editora_DataSetTableAdapters.AcervoTableAdapter acervoTableAdapter;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDClientesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeCompletoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroTelefoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDAcervoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tituloDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn autorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sinopseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn capaDataGridViewImageColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDClientesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeCompletoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroTelefoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
     }
 }
 
