@@ -31,16 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuVertical = new System.Windows.Forms.Panel();
-            this.subMenuAce = new System.Windows.Forms.Panel();
-            this.btnRevista = new System.Windows.Forms.Button();
-            this.btnAudio = new System.Windows.Forms.Button();
-            this.btnHq = new System.Windows.Forms.Button();
-            this.btnEbook = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             this.SubMenuCad = new System.Windows.Forms.Panel();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnItens = new System.Windows.Forms.Button();
-            this.btnAcervo = new System.Windows.Forms.Button();
-            this.btnCadastro = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.btnConfig = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -49,69 +43,75 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnItens = new System.Windows.Forms.Panel();
             this.pnCliente = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDClientesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeCompletoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroTelefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.editora_DataSet = new Editora4._2.Editora_DataSet();
             this.btnNew2 = new System.Windows.Forms.Button();
             this.btnEdit2 = new System.Windows.Forms.Button();
             this.btnCancel2 = new System.Windows.Forms.Button();
             this.btnSave2 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.email = new System.Windows.Forms.TextBox();
             this.telefone = new System.Windows.Forms.TextBox();
-            this.nomeCompleto = new System.Windows.Forms.TextBox();
+            this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtSearch2 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.iDAcervoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tituloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sinopseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capaDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.acervoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnNew = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.txtAutor = new System.Windows.Forms.TextBox();
             this.txtSinopse = new System.Windows.Forms.TextBox();
-            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.editora_DataSet = new Editora4._2.Editora_DataSet();
-            this.acervoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label14 = new System.Windows.Forms.Label();
             this.clientesTableAdapter = new Editora4._2.Editora_DataSetTableAdapters.ClientesTableAdapter();
             this.acervoTableAdapter = new Editora4._2.Editora_DataSetTableAdapters.AcervoTableAdapter();
             this.menuVertical.SuspendLayout();
-            this.subMenuAce.SuspendLayout();
             this.SubMenuCad.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnItens.SuspendLayout();
             this.pnCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).BeginInit();
+            this.panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // menuVertical
             // 
             this.menuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
-            this.menuVertical.Controls.Add(this.subMenuAce);
+            this.menuVertical.Controls.Add(this.label15);
             this.menuVertical.Controls.Add(this.SubMenuCad);
-            this.menuVertical.Controls.Add(this.btnAcervo);
-            this.menuVertical.Controls.Add(this.btnCadastro);
             this.menuVertical.Controls.Add(this.btnHelp);
             this.menuVertical.Controls.Add(this.btnConfig);
             this.menuVertical.Controls.Add(this.panel3);
@@ -121,103 +121,25 @@
             this.menuVertical.Size = new System.Drawing.Size(186, 518);
             this.menuVertical.TabIndex = 1;
             // 
-            // subMenuAce
+            // label15
             // 
-            this.subMenuAce.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.subMenuAce.Controls.Add(this.btnRevista);
-            this.subMenuAce.Controls.Add(this.btnAudio);
-            this.subMenuAce.Controls.Add(this.btnHq);
-            this.subMenuAce.Controls.Add(this.btnEbook);
-            this.subMenuAce.Location = new System.Drawing.Point(0, 271);
-            this.subMenuAce.Name = "subMenuAce";
-            this.subMenuAce.Size = new System.Drawing.Size(185, 140);
-            this.subMenuAce.TabIndex = 14;
-            this.subMenuAce.Visible = false;
-            // 
-            // btnRevista
-            // 
-            this.btnRevista.BackColor = System.Drawing.Color.Transparent;
-            this.btnRevista.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnRevista.FlatAppearance.BorderSize = 0;
-            this.btnRevista.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(78)))));
-            this.btnRevista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
-            this.btnRevista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRevista.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRevista.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.btnRevista.Location = new System.Drawing.Point(2, 108);
-            this.btnRevista.Name = "btnRevista";
-            this.btnRevista.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnRevista.Size = new System.Drawing.Size(184, 29);
-            this.btnRevista.TabIndex = 9;
-            this.btnRevista.Text = "&Revistas";
-            this.btnRevista.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRevista.UseVisualStyleBackColor = false;
-            // 
-            // btnAudio
-            // 
-            this.btnAudio.BackColor = System.Drawing.Color.Transparent;
-            this.btnAudio.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnAudio.FlatAppearance.BorderSize = 0;
-            this.btnAudio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(78)))));
-            this.btnAudio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
-            this.btnAudio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAudio.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAudio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.btnAudio.Location = new System.Drawing.Point(2, 38);
-            this.btnAudio.Name = "btnAudio";
-            this.btnAudio.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnAudio.Size = new System.Drawing.Size(184, 29);
-            this.btnAudio.TabIndex = 7;
-            this.btnAudio.Text = "&Audio Books";
-            this.btnAudio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAudio.UseVisualStyleBackColor = false;
-            // 
-            // btnHq
-            // 
-            this.btnHq.BackColor = System.Drawing.Color.Transparent;
-            this.btnHq.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnHq.FlatAppearance.BorderSize = 0;
-            this.btnHq.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(78)))));
-            this.btnHq.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
-            this.btnHq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHq.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.btnHq.Location = new System.Drawing.Point(2, 73);
-            this.btnHq.Name = "btnHq";
-            this.btnHq.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnHq.Size = new System.Drawing.Size(184, 29);
-            this.btnHq.TabIndex = 8;
-            this.btnHq.Text = "&HQ\'s";
-            this.btnHq.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHq.UseVisualStyleBackColor = false;
-            // 
-            // btnEbook
-            // 
-            this.btnEbook.BackColor = System.Drawing.Color.Transparent;
-            this.btnEbook.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnEbook.FlatAppearance.BorderSize = 0;
-            this.btnEbook.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(78)))));
-            this.btnEbook.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
-            this.btnEbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEbook.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEbook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.btnEbook.Location = new System.Drawing.Point(2, 3);
-            this.btnEbook.Name = "btnEbook";
-            this.btnEbook.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnEbook.Size = new System.Drawing.Size(184, 29);
-            this.btnEbook.TabIndex = 6;
-            this.btnEbook.Text = "&E - Books";
-            this.btnEbook.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEbook.UseVisualStyleBackColor = false;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.label15.Location = new System.Drawing.Point(3, 103);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(115, 21);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "&Cadastro";
             // 
             // SubMenuCad
             // 
             this.SubMenuCad.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.SubMenuCad.Controls.Add(this.btnClientes);
             this.SubMenuCad.Controls.Add(this.btnItens);
-            this.SubMenuCad.Location = new System.Drawing.Point(0, 124);
+            this.SubMenuCad.Location = new System.Drawing.Point(0, 129);
             this.SubMenuCad.Name = "SubMenuCad";
-            this.SubMenuCad.Size = new System.Drawing.Size(185, 71);
+            this.SubMenuCad.Size = new System.Drawing.Size(185, 75);
             this.SubMenuCad.TabIndex = 13;
             // 
             // btnClientes
@@ -232,8 +154,8 @@
             this.btnClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.btnClientes.Location = new System.Drawing.Point(0, 2);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnClientes.Size = new System.Drawing.Size(186, 29);
+            this.btnClientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnClientes.Size = new System.Drawing.Size(186, 33);
             this.btnClientes.TabIndex = 6;
             this.btnClientes.Text = "&Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -252,50 +174,13 @@
             this.btnItens.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.btnItens.Location = new System.Drawing.Point(0, 38);
             this.btnItens.Name = "btnItens";
-            this.btnItens.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnItens.Size = new System.Drawing.Size(186, 29);
+            this.btnItens.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnItens.Size = new System.Drawing.Size(186, 33);
             this.btnItens.TabIndex = 6;
             this.btnItens.Text = "&Itens";
             this.btnItens.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnItens.UseVisualStyleBackColor = false;
             this.btnItens.Click += new System.EventHandler(this.btnItens_Click);
-            // 
-            // btnAcervo
-            // 
-            this.btnAcervo.BackColor = System.Drawing.Color.Transparent;
-            this.btnAcervo.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnAcervo.FlatAppearance.BorderSize = 0;
-            this.btnAcervo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(78)))));
-            this.btnAcervo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
-            this.btnAcervo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcervo.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcervo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.btnAcervo.Location = new System.Drawing.Point(0, 218);
-            this.btnAcervo.Name = "btnAcervo";
-            this.btnAcervo.Size = new System.Drawing.Size(185, 40);
-            this.btnAcervo.TabIndex = 6;
-            this.btnAcervo.Text = "&Acervo";
-            this.btnAcervo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAcervo.UseVisualStyleBackColor = false;
-            this.btnAcervo.Visible = false;
-            // 
-            // btnCadastro
-            // 
-            this.btnCadastro.BackColor = System.Drawing.Color.Transparent;
-            this.btnCadastro.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnCadastro.FlatAppearance.BorderSize = 0;
-            this.btnCadastro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(78)))));
-            this.btnCadastro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
-            this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastro.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.btnCadastro.Location = new System.Drawing.Point(0, 71);
-            this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Size = new System.Drawing.Size(185, 40);
-            this.btnCadastro.TabIndex = 6;
-            this.btnCadastro.Text = "&Cadastro";
-            this.btnCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadastro.UseVisualStyleBackColor = false;
             // 
             // btnHelp
             // 
@@ -384,7 +269,6 @@
             // 
             this.pnItens.BackColor = System.Drawing.Color.Transparent;
             this.pnItens.Controls.Add(this.pnCliente);
-            this.pnItens.Controls.Add(this.label14);
             this.pnItens.Controls.Add(this.dataGridView);
             this.pnItens.Controls.Add(this.btnNew);
             this.pnItens.Controls.Add(this.btnEdit);
@@ -393,6 +277,7 @@
             this.pnItens.Controls.Add(this.txtSearch);
             this.pnItens.Controls.Add(this.label7);
             this.pnItens.Controls.Add(this.panel);
+            this.pnItens.Controls.Add(this.label14);
             this.pnItens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnItens.Location = new System.Drawing.Point(186, 0);
             this.pnItens.Name = "pnItens";
@@ -401,114 +286,173 @@
             // 
             // pnCliente
             // 
-            this.pnCliente.Controls.Add(this.label13);
             this.pnCliente.Controls.Add(this.dataGridView1);
             this.pnCliente.Controls.Add(this.btnNew2);
             this.pnCliente.Controls.Add(this.btnEdit2);
             this.pnCliente.Controls.Add(this.btnCancel2);
             this.pnCliente.Controls.Add(this.btnSave2);
-            this.pnCliente.Controls.Add(this.panel1);
-            this.pnCliente.Controls.Add(this.textBox4);
+            this.pnCliente.Controls.Add(this.panel2);
+            this.pnCliente.Controls.Add(this.txtSearch2);
             this.pnCliente.Controls.Add(this.label12);
+            this.pnCliente.Controls.Add(this.label13);
             this.pnCliente.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnCliente.Location = new System.Drawing.Point(0, 0);
             this.pnCliente.Name = "pnCliente";
             this.pnCliente.Size = new System.Drawing.Size(672, 518);
             this.pnCliente.TabIndex = 11;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.label13.Location = new System.Drawing.Point(13, 22);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 21);
-            this.label13.TabIndex = 19;
-            this.label13.Text = "Cliente";
-            // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 208);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDClientesDataGridViewTextBoxColumn,
+            this.nomeCompletoDataGridViewTextBoxColumn,
+            this.numeroTelefoneDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.clientesBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(33, 204);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(648, 246);
+            this.dataGridView1.Size = new System.Drawing.Size(607, 238);
             this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
+            // 
+            // iDClientesDataGridViewTextBoxColumn
+            // 
+            this.iDClientesDataGridViewTextBoxColumn.DataPropertyName = "ID_Clientes";
+            this.iDClientesDataGridViewTextBoxColumn.HeaderText = "ID_Clientes";
+            this.iDClientesDataGridViewTextBoxColumn.Name = "iDClientesDataGridViewTextBoxColumn";
+            this.iDClientesDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // nomeCompletoDataGridViewTextBoxColumn
+            // 
+            this.nomeCompletoDataGridViewTextBoxColumn.DataPropertyName = "Nome_Completo";
+            this.nomeCompletoDataGridViewTextBoxColumn.HeaderText = "Nome_Completo";
+            this.nomeCompletoDataGridViewTextBoxColumn.Name = "nomeCompletoDataGridViewTextBoxColumn";
+            this.nomeCompletoDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // numeroTelefoneDataGridViewTextBoxColumn
+            // 
+            this.numeroTelefoneDataGridViewTextBoxColumn.DataPropertyName = "Numero_Telefone";
+            this.numeroTelefoneDataGridViewTextBoxColumn.HeaderText = "Numero_Telefone";
+            this.numeroTelefoneDataGridViewTextBoxColumn.Name = "numeroTelefoneDataGridViewTextBoxColumn";
+            this.numeroTelefoneDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 180;
+            // 
+            // clientesBindingSource
+            // 
+            this.clientesBindingSource.DataMember = "Clientes";
+            this.clientesBindingSource.DataSource = this.editora_DataSet;
+            // 
+            // editora_DataSet
+            // 
+            this.editora_DataSet.DataSetName = "Editora_DataSet";
+            this.editora_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnNew2
             // 
-            this.btnNew2.Location = new System.Drawing.Point(342, 472);
+            this.btnNew2.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnNew2.FlatAppearance.BorderSize = 0;
+            this.btnNew2.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkCyan;
+            this.btnNew2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnNew2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnNew2.Location = new System.Drawing.Point(321, 467);
             this.btnNew2.Name = "btnNew2";
             this.btnNew2.Size = new System.Drawing.Size(75, 23);
             this.btnNew2.TabIndex = 12;
             this.btnNew2.Text = "New";
             this.btnNew2.UseVisualStyleBackColor = true;
+            this.btnNew2.Click += new System.EventHandler(this.btnNew2_Click);
             // 
             // btnEdit2
             // 
-            this.btnEdit2.Location = new System.Drawing.Point(423, 472);
+            this.btnEdit2.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnEdit2.FlatAppearance.BorderSize = 0;
+            this.btnEdit2.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkCyan;
+            this.btnEdit2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnEdit2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnEdit2.Location = new System.Drawing.Point(402, 467);
             this.btnEdit2.Name = "btnEdit2";
             this.btnEdit2.Size = new System.Drawing.Size(75, 23);
             this.btnEdit2.TabIndex = 13;
             this.btnEdit2.Text = "Edit";
             this.btnEdit2.UseVisualStyleBackColor = true;
+            this.btnEdit2.Click += new System.EventHandler(this.btnEdit2_Click);
             // 
             // btnCancel2
             // 
-            this.btnCancel2.Location = new System.Drawing.Point(504, 472);
+            this.btnCancel2.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnCancel2.FlatAppearance.BorderSize = 0;
+            this.btnCancel2.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkCyan;
+            this.btnCancel2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnCancel2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnCancel2.Location = new System.Drawing.Point(483, 467);
             this.btnCancel2.Name = "btnCancel2";
             this.btnCancel2.Size = new System.Drawing.Size(75, 23);
             this.btnCancel2.TabIndex = 14;
             this.btnCancel2.Text = "Cancel";
             this.btnCancel2.UseVisualStyleBackColor = true;
+            this.btnCancel2.Click += new System.EventHandler(this.btnCancel2_Click);
             // 
             // btnSave2
             // 
-            this.btnSave2.Location = new System.Drawing.Point(585, 472);
+            this.btnSave2.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnSave2.FlatAppearance.BorderSize = 0;
+            this.btnSave2.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkCyan;
+            this.btnSave2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnSave2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnSave2.Location = new System.Drawing.Point(564, 467);
             this.btnSave2.Name = "btnSave2";
             this.btnSave2.Size = new System.Drawing.Size(75, 23);
             this.btnSave2.TabIndex = 15;
             this.btnSave2.Text = "Save";
             this.btnSave2.UseVisualStyleBackColor = true;
+            this.btnSave2.Click += new System.EventHandler(this.btnSave2_Click);
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.Controls.Add(this.email);
-            this.panel1.Controls.Add(this.telefone);
-            this.panel1.Controls.Add(this.nomeCompleto);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Enabled = false;
-            this.panel1.Location = new System.Drawing.Point(13, 65);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(648, 94);
-            this.panel1.TabIndex = 11;
+            this.panel2.Controls.Add(this.email);
+            this.panel2.Controls.Add(this.telefone);
+            this.panel2.Controls.Add(this.txtNomeCompleto);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Enabled = false;
+            this.panel2.Location = new System.Drawing.Point(33, 61);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(607, 94);
+            this.panel2.TabIndex = 11;
             // 
             // email
             // 
             this.email.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Email", true));
-            this.email.Location = new System.Drawing.Point(59, 61);
+            this.email.Location = new System.Drawing.Point(56, 61);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(571, 20);
+            this.email.Size = new System.Drawing.Size(548, 20);
             this.email.TabIndex = 2;
             // 
             // telefone
             // 
             this.telefone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Numero_Telefone", true));
-            this.telefone.Location = new System.Drawing.Point(59, 36);
+            this.telefone.Location = new System.Drawing.Point(56, 36);
             this.telefone.Name = "telefone";
-            this.telefone.Size = new System.Drawing.Size(571, 20);
+            this.telefone.Size = new System.Drawing.Size(548, 20);
             this.telefone.TabIndex = 2;
             // 
-            // nomeCompleto
+            // txtNomeCompleto
             // 
-            this.nomeCompleto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Nome_Completo", true));
-            this.nomeCompleto.Location = new System.Drawing.Point(59, 9);
-            this.nomeCompleto.Name = "nomeCompleto";
-            this.nomeCompleto.Size = new System.Drawing.Size(571, 20);
-            this.nomeCompleto.TabIndex = 2;
+            this.txtNomeCompleto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Nome_Completo", true));
+            this.txtNomeCompleto.Location = new System.Drawing.Point(56, 9);
+            this.txtNomeCompleto.Name = "txtNomeCompleto";
+            this.txtNomeCompleto.Size = new System.Drawing.Size(548, 20);
+            this.txtNomeCompleto.TabIndex = 2;
             // 
             // label8
             // 
@@ -545,40 +489,90 @@
             this.label11.TabIndex = 1;
             this.label11.Text = "Email:";
             // 
-            // textBox4
+            // txtSearch2
             // 
-            this.textBox4.Location = new System.Drawing.Point(71, 179);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(575, 20);
-            this.textBox4.TabIndex = 18;
+            this.txtSearch2.Location = new System.Drawing.Point(89, 175);
+            this.txtSearch2.Name = "txtSearch2";
+            this.txtSearch2.Size = new System.Drawing.Size(548, 20);
+            this.txtSearch2.TabIndex = 18;
+            this.txtSearch2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch2_KeyPress);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(25, 182);
+            this.label12.Location = new System.Drawing.Point(30, 178);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 13);
             this.label12.TabIndex = 16;
             this.label12.Text = "Busca:";
             // 
-            // label14
+            // label13
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.label14.Location = new System.Drawing.Point(11, 9);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(65, 21);
-            this.label14.TabIndex = 19;
-            this.label14.Text = "Itens";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.label13.Location = new System.Drawing.Point(13, 22);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(92, 21);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "Cliente";
             // 
             // dataGridView
             // 
+            this.dataGridView.AutoGenerateColumns = false;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDAcervoDataGridViewTextBoxColumn,
+            this.tituloDataGridViewTextBoxColumn,
+            this.autorDataGridViewTextBoxColumn,
+            this.sinopseDataGridViewTextBoxColumn,
+            this.capaDataGridViewImageColumn});
+            this.dataGridView.DataSource = this.acervoBindingSource;
             this.dataGridView.Location = new System.Drawing.Point(12, 260);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(648, 220);
             this.dataGridView.TabIndex = 9;
+            this.dataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView_KeyDown);
+            // 
+            // iDAcervoDataGridViewTextBoxColumn
+            // 
+            this.iDAcervoDataGridViewTextBoxColumn.DataPropertyName = "ID_Acervo";
+            this.iDAcervoDataGridViewTextBoxColumn.HeaderText = "ID_Acervo";
+            this.iDAcervoDataGridViewTextBoxColumn.Name = "iDAcervoDataGridViewTextBoxColumn";
+            this.iDAcervoDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // tituloDataGridViewTextBoxColumn
+            // 
+            this.tituloDataGridViewTextBoxColumn.DataPropertyName = "Titulo";
+            this.tituloDataGridViewTextBoxColumn.HeaderText = "Titulo";
+            this.tituloDataGridViewTextBoxColumn.Name = "tituloDataGridViewTextBoxColumn";
+            this.tituloDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // autorDataGridViewTextBoxColumn
+            // 
+            this.autorDataGridViewTextBoxColumn.DataPropertyName = "Autor";
+            this.autorDataGridViewTextBoxColumn.HeaderText = "Autor";
+            this.autorDataGridViewTextBoxColumn.Name = "autorDataGridViewTextBoxColumn";
+            this.autorDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // sinopseDataGridViewTextBoxColumn
+            // 
+            this.sinopseDataGridViewTextBoxColumn.DataPropertyName = "Sinopse";
+            this.sinopseDataGridViewTextBoxColumn.HeaderText = "Sinopse";
+            this.sinopseDataGridViewTextBoxColumn.Name = "sinopseDataGridViewTextBoxColumn";
+            this.sinopseDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // capaDataGridViewImageColumn
+            // 
+            this.capaDataGridViewImageColumn.DataPropertyName = "Capa";
+            this.capaDataGridViewImageColumn.HeaderText = "Capa";
+            this.capaDataGridViewImageColumn.Name = "capaDataGridViewImageColumn";
+            this.capaDataGridViewImageColumn.Width = 200;
+            // 
+            // acervoBindingSource
+            // 
+            this.acervoBindingSource.DataMember = "Acervo";
+            this.acervoBindingSource.DataSource = this.editora_DataSet;
             // 
             // btnNew
             // 
@@ -588,6 +582,7 @@
             this.btnNew.TabIndex = 2;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnEdit
             // 
@@ -597,6 +592,7 @@
             this.btnEdit.TabIndex = 3;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnCancel
             // 
@@ -606,6 +602,7 @@
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -615,13 +612,31 @@
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(65, 234);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(580, 20);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(20, 238);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Busca:";
             // 
             // panel
             // 
             this.panel.Controls.Add(this.btnBrowse);
             this.panel.Controls.Add(this.txtAutor);
             this.panel.Controls.Add(this.txtSinopse);
-            this.panel.Controls.Add(this.txtFullName);
+            this.panel.Controls.Add(this.txtTitulo);
             this.panel.Controls.Add(this.label3);
             this.panel.Controls.Add(this.label4);
             this.panel.Controls.Add(this.label5);
@@ -641,6 +656,7 @@
             this.btnBrowse.TabIndex = 1;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // txtAutor
             // 
@@ -659,13 +675,13 @@
             this.txtSinopse.Size = new System.Drawing.Size(422, 126);
             this.txtSinopse.TabIndex = 2;
             // 
-            // txtFullName
+            // txtTitulo
             // 
-            this.txtFullName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.acervoBindingSource, "Titulo", true));
-            this.txtFullName.Location = new System.Drawing.Point(211, 9);
-            this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(422, 20);
-            this.txtFullName.TabIndex = 0;
+            this.txtTitulo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.acervoBindingSource, "Titulo", true));
+            this.txtTitulo.Location = new System.Drawing.Point(211, 9);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(422, 20);
+            this.txtTitulo.TabIndex = 0;
             // 
             // label3
             // 
@@ -713,36 +729,16 @@
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             // 
-            // txtSearch
+            // label14
             // 
-            this.txtSearch.Location = new System.Drawing.Point(65, 234);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(580, 20);
-            this.txtSearch.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(20, 238);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Busca:";
-            // 
-            // clientesBindingSource
-            // 
-            this.clientesBindingSource.DataMember = "Clientes";
-            this.clientesBindingSource.DataSource = this.editora_DataSet;
-            // 
-            // editora_DataSet
-            // 
-            this.editora_DataSet.DataSetName = "Editora_DataSet";
-            this.editora_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // acervoBindingSource
-            // 
-            this.acervoBindingSource.DataMember = "Acervo";
-            this.acervoBindingSource.DataSource = this.editora_DataSet;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.label14.Location = new System.Drawing.Point(11, 9);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(65, 21);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "Itens";
             // 
             // clientesTableAdapter
             // 
@@ -766,7 +762,7 @@
             this.Text = "Editora4.2";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuVertical.ResumeLayout(false);
-            this.subMenuAce.ResumeLayout(false);
+            this.menuVertical.PerformLayout();
             this.SubMenuCad.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -776,15 +772,15 @@
             this.pnCliente.ResumeLayout(false);
             this.pnCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).EndInit();
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -792,19 +788,12 @@
         #endregion
 
         private System.Windows.Forms.Panel menuVertical;
-        private System.Windows.Forms.Button btnRevista;
-        private System.Windows.Forms.Button btnHq;
-        private System.Windows.Forms.Button btnAcervo;
-        private System.Windows.Forms.Button btnCadastro;
-        private System.Windows.Forms.Button btnEbook;
-        private System.Windows.Forms.Button btnAudio;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button btnConfig;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel subMenuAce;
         private System.Windows.Forms.Panel pnItens;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button btnNew;
@@ -815,7 +804,7 @@
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.TextBox txtAutor;
         private System.Windows.Forms.TextBox txtSinopse;
-        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -830,15 +819,15 @@
         private System.Windows.Forms.Button btnEdit2;
         private System.Windows.Forms.Button btnCancel2;
         private System.Windows.Forms.Button btnSave2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.TextBox telefone;
-        private System.Windows.Forms.TextBox nomeCompleto;
+        private System.Windows.Forms.TextBox txtNomeCompleto;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtSearch2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel SubMenuCad;
@@ -849,6 +838,16 @@
         private Editora_DataSetTableAdapters.ClientesTableAdapter clientesTableAdapter;
         private System.Windows.Forms.BindingSource acervoBindingSource;
         private Editora_DataSetTableAdapters.AcervoTableAdapter acervoTableAdapter;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDClientesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeCompletoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroTelefoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDAcervoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tituloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn autorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sinopseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn capaDataGridViewImageColumn;
     }
 }
 
