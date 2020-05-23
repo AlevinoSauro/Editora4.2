@@ -76,6 +76,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.iDClientesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeCompletoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroTelefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.editora_DataSet = new Editora4._2.Editora_DataSet();
             this.iDAcervoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,10 +90,10 @@
             this.acervoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientesTableAdapter = new Editora4._2.Editora_DataSetTableAdapters.ClientesTableAdapter();
             this.acervoTableAdapter = new Editora4._2.Editora_DataSetTableAdapters.AcervoTableAdapter();
-            this.iDClientesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeCompletoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroTelefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuVertical.SuspendLayout();
             this.SubMenuCad.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -104,6 +108,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuVertical
@@ -654,6 +660,34 @@
             this.label14.TabIndex = 19;
             this.label14.Text = "Itens";
             // 
+            // iDClientesDataGridViewTextBoxColumn
+            // 
+            this.iDClientesDataGridViewTextBoxColumn.DataPropertyName = "ID_Clientes";
+            this.iDClientesDataGridViewTextBoxColumn.HeaderText = "ID_Clientes";
+            this.iDClientesDataGridViewTextBoxColumn.Name = "iDClientesDataGridViewTextBoxColumn";
+            this.iDClientesDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // nomeCompletoDataGridViewTextBoxColumn
+            // 
+            this.nomeCompletoDataGridViewTextBoxColumn.DataPropertyName = "Nome_Completo";
+            this.nomeCompletoDataGridViewTextBoxColumn.HeaderText = "Nome_Completo";
+            this.nomeCompletoDataGridViewTextBoxColumn.Name = "nomeCompletoDataGridViewTextBoxColumn";
+            this.nomeCompletoDataGridViewTextBoxColumn.Width = 170;
+            // 
+            // numeroTelefoneDataGridViewTextBoxColumn
+            // 
+            this.numeroTelefoneDataGridViewTextBoxColumn.DataPropertyName = "Numero_Telefone";
+            this.numeroTelefoneDataGridViewTextBoxColumn.HeaderText = "Numero_Telefone";
+            this.numeroTelefoneDataGridViewTextBoxColumn.Name = "numeroTelefoneDataGridViewTextBoxColumn";
+            this.numeroTelefoneDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 200;
+            // 
             // clientesBindingSource
             // 
             this.clientesBindingSource.DataMember = "Clientes";
@@ -712,33 +746,51 @@
             // 
             this.acervoTableAdapter.ClearBeforeFill = true;
             // 
-            // iDClientesDataGridViewTextBoxColumn
+            // panel1
             // 
-            this.iDClientesDataGridViewTextBoxColumn.DataPropertyName = "ID_Clientes";
-            this.iDClientesDataGridViewTextBoxColumn.HeaderText = "ID_Clientes";
-            this.iDClientesDataGridViewTextBoxColumn.Name = "iDClientesDataGridViewTextBoxColumn";
-            this.iDClientesDataGridViewTextBoxColumn.Width = 70;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Location = new System.Drawing.Point(352, 167);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(368, 103);
+            this.panel1.TabIndex = 3;
             // 
-            // nomeCompletoDataGridViewTextBoxColumn
+            // label9
             // 
-            this.nomeCompletoDataGridViewTextBoxColumn.DataPropertyName = "Nome_Completo";
-            this.nomeCompletoDataGridViewTextBoxColumn.HeaderText = "Nome_Completo";
-            this.nomeCompletoDataGridViewTextBoxColumn.Name = "nomeCompletoDataGridViewTextBoxColumn";
-            this.nomeCompletoDataGridViewTextBoxColumn.Width = 170;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.label9.Location = new System.Drawing.Point(90, 54);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(263, 23);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Motivando sua leitura";
             // 
-            // numeroTelefoneDataGridViewTextBoxColumn
+            // label16
             // 
-            this.numeroTelefoneDataGridViewTextBoxColumn.DataPropertyName = "Numero_Telefone";
-            this.numeroTelefoneDataGridViewTextBoxColumn.HeaderText = "Numero_Telefone";
-            this.numeroTelefoneDataGridViewTextBoxColumn.Name = "numeroTelefoneDataGridViewTextBoxColumn";
-            this.numeroTelefoneDataGridViewTextBoxColumn.Width = 120;
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Copperplate Gothic Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.label16.Location = new System.Drawing.Point(121, 24);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(186, 30);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Editora 4.2";
             // 
-            // emailDataGridViewTextBoxColumn
+            // pictureBox2
             // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 200;
+            this.pictureBox2.ErrorImage = null;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(13, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(61, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -747,6 +799,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(858, 518);
             this.Controls.Add(this.pnItens);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuVertical);
             this.Name = "Form1";
             this.ShowIcon = false;
@@ -773,6 +826,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.editora_DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acervoBindingSource)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -839,6 +895,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeCompletoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroTelefoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
